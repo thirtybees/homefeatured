@@ -1,0 +1,13 @@
+module_name: Home Featured
+compatible_versions: 1.0.0+
+author: thirty bees
+category: front office
+tags:
+  - home page
+  - featured products
+  - home featured
+description_short: The home featured module allows you to add featured products to your home page.
+description: description.md
+images:
+  - image-1.png
+license: AFL
