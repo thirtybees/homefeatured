@@ -53,7 +53,7 @@ class HomeFeatured extends Module
     {
         $this->name = 'homefeatured';
         $this->tab = 'front_office_features';
-        $this->version = '2.1.0';
+        $this->version = '2.1.1';
         $this->author = 'thirty bees';
         $this->need_instance = 0;
 
@@ -271,6 +271,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     * @throws PrestaShopException
      */
     public function hookAddProduct()
     {
@@ -279,6 +280,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     * @throws PrestaShopException
      */
     public function hookUpdateProduct()
     {
@@ -287,6 +289,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     * @throws PrestaShopException
      */
     public function hookDeleteProduct()
     {
@@ -295,6 +298,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     * @throws PrestaShopException
      */
     public function hookCategoryUpdate()
     {
@@ -303,6 +307,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     * @throws PrestaShopException
      */
     public function clearCache()
     {
@@ -313,8 +318,9 @@ class HomeFeatured extends Module
 
         foreach ($caches as $template => $cacheId) {
             Tools::clearCache(Context::getContext()->smarty, $this->getTemplatePath($template), $cacheId);
-
         }
+
+        Configuration::updateValue(static::CACHE_TIMESTAMP, time());
     }
 
     /**
