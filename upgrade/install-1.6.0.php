@@ -23,12 +23,11 @@
  * PrestaShop is an internationally registered trademark & property of PrestaShop SA
  */
 
-header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
-header('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT');
+if (!defined('_TB_VERSION_')) {
+    return;
+}
 
-header('Cache-Control: no-store, no-cache, must-revalidate');
-header('Cache-Control: post-check=0, pre-check=0', false);
-header('Pragma: no-cache');
-
-header('Location: ../');
-exit;
+function upgrade_module_1_6_0($module)
+{
+    return Configuration::updateValue('HOME_FEATURED_CAT', (int)Context::getContext()->shop->getCategory()) && Configuration::updateValue('HOME_FEATURED_RANDOMIZE', false);
+}
