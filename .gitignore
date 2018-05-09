@@ -1,1 +1,7 @@
-*homefeatured*.zip
+
+/translations/*
+!/translations/index.php
+
+/config*.xml
+
+homefeatured-*.zip
