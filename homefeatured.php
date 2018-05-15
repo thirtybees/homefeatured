@@ -60,7 +60,7 @@ class HomeFeatured extends Module
         $this->bootstrap = true;
         parent::__construct();
 
-        $this->displayName = $this->l('Featured products on the homepage');
+        $this->displayName = $this->l('Block Featured Products');
         $this->description = $this->l('Displays featured products in the central column of your homepage.');
 
         if (Configuration::get(static::CACHE_TIMESTAMP) < (time() - Configuration::get(static::CACHE_TTL))) {
