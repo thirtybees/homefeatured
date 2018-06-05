@@ -62,6 +62,7 @@ class HomeFeatured extends Module
 
         $this->displayName = $this->l('Block Featured Products');
         $this->description = $this->l('Displays featured products in the central column of your homepage.');
+        $this->tb_versions_compliancy = '> 1.0.0';
 
         if (Configuration::get(static::CACHE_TIMESTAMP) < (time() - Configuration::get(static::CACHE_TTL))) {
             $this->clearCache();
