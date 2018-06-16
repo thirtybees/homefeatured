@@ -53,7 +53,7 @@ class HomeFeatured extends Module
     {
         $this->name = 'homefeatured';
         $this->tab = 'front_office_features';
-        $this->version = '2.1.1';
+        $this->version = '2.1.2';
         $this->author = 'thirty bees';
         $this->need_instance = 0;
 
