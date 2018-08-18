@@ -378,7 +378,7 @@ class HomeFeatured extends Module
                         'type'   => 'text',
                         'label'  => $this->l('Cache lifetime'),
                         'name'   => static::CACHE_TTL,
-                        'desc'   => $this->l('Determines for how long the bestseller block stays cached'),
+                        'desc'   => $this->l('Determines for how long the Featured products block stays cached'),
                         'suffix' => $this->l('Minutes'),
                         'class'  => 'fixed-width-xs',
                     ],
