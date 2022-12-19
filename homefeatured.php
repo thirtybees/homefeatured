@@ -129,8 +129,9 @@ class HomeFeatured extends Module
             }
 
             $cat = Tools::getValue(static::CATEGORY_ID);
-            if (!Validate::isInt($cat) || $cat <= 0)
+            if (!Validate::isInt($cat) || $cat <= 0) {
                 $errors[] = $this->l('The category ID is invalid. Please choose an existing category ID.');
+            }
 
             $rand = Tools::getValue(static::RANDOMIZE);
             if (!Validate::isBool($rand)) {
