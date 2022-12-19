@@ -210,10 +210,6 @@ class HomeFeatured extends Module
                 );
             }
         }
-
-        if (HomeFeatured::$cache_products === false || empty(HomeFeatured::$cache_products)) {
-            return;
-        }
     }
 
     /**
