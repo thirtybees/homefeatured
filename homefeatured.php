@@ -39,10 +39,10 @@ class HomeFeatured extends Module
     const CATEGORY_ID = 'HOME_FEATURED_CAT';
     const RANDOMIZE = 'HOME_FEATURED_RANDOMIZE';
 
-    // @codingStandardsIgnoreStart
-    /** @var array $cache_products */
+    /**
+     * @var array $cache_products
+     */
     protected static $cache_products;
-    // @codingStandardsIgnoreEnd
 
     /**
      * HomeFeatured constructor.
@@ -72,6 +72,7 @@ class HomeFeatured extends Module
 
     /**
      * @return bool
+     *
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      */
@@ -99,6 +100,7 @@ class HomeFeatured extends Module
 
     /**
      * @return bool
+     *
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      */
@@ -111,7 +113,7 @@ class HomeFeatured extends Module
 
     /**
      * @return string
-     * @throws Exception
+     *
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      * @throws SmartyException
@@ -215,7 +217,7 @@ class HomeFeatured extends Module
 
     /**
      * @return string
-     * @throws Exception
+     *
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      * @throws SmartyException
@@ -235,7 +237,7 @@ class HomeFeatured extends Module
 
     /**
      * @return string
-     * @throws Exception
+     *
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      * @throws SmartyException
@@ -261,7 +263,7 @@ class HomeFeatured extends Module
 
     /**
      * @return string
-     * @throws Exception
+     *
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      * @throws SmartyException
@@ -287,6 +289,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     *
      * @throws PrestaShopException
      */
     public function hookAddProduct()
@@ -296,6 +299,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     *
      * @throws PrestaShopException
      */
     public function hookUpdateProduct()
@@ -305,6 +309,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     *
      * @throws PrestaShopException
      */
     public function hookDeleteProduct()
@@ -314,6 +319,7 @@ class HomeFeatured extends Module
 
     /**
      * @return void
+     *
      * @throws PrestaShopException
      */
     public function hookCategoryUpdate()
@@ -341,7 +347,7 @@ class HomeFeatured extends Module
 
     /**
      * @return string
-     * @throws Exception
+     *
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      * @throws SmartyException
@@ -430,6 +436,7 @@ class HomeFeatured extends Module
 
     /**
      * @return array
+     *
      * @throws PrestaShopException
      */
     public function getConfigFieldsValues()
